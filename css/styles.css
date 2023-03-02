@@ -1,0 +1,133 @@
+:root {
+  --color-header-footer: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 19%,
+    rgba(0, 212, 255, 1) 85%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*============= Header ==================*/
+header {
+  background: var(--color-header-footer);
+}
+
+.contenedor-logo {
+  display: flex;
+  justify-content: center;
+}
+
+header .logo-pagina {
+  width: 120px;
+  transition: 1s;
+}
+
+/* Agregamos un efecto de rotacion al logo de la pagina */
+header .logo-pagina:hover {
+  transform: rotate(360deg);
+}
+
+header h3 {
+  font-family: "Tilt Warp", cursive;
+  color: #ffff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-enlaces {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-enlaces:hover {
+  background: #00000050;
+}
+
+/* ==================================== */
+
+/* ======= Main ======== */
+.funkos {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.funkos h2 {
+  margin-bottom: 20px;
+  font-family: "Tilt Warp", cursive;
+  text-align: center;
+}
+
+.contenedor {
+  width: 100%;
+  margin: auto;
+}
+
+div img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.funko-columna {
+  margin: 5px;
+  border: 3px solid #000000;
+}
+
+.funkos .contenedor {
+  display: grid;
+}
+
+/* =================================== */
+
+/* ============ Footer ================ */
+footer {
+  background: var(--color-header-footer);
+}
+footer h3 {
+  padding: 10px;
+  color: #ffff;
+  text-align: center;
+}
+/* =================================== */
+
+@media (min-width: 520px) {
+  .funkos .contenedor {
+    grid-template-columns: repeat(2, 50%);
+  }
+  nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 728px) {
+  .funkos .contenedor {
+    grid-template-columns: repeat(3, 33.3%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenedor {
+    width: 1200px;
+  }
+}

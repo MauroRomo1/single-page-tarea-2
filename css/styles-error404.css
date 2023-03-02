@@ -1,0 +1,79 @@
+:root {
+  --color-header-footer: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 19%,
+    rgba(0, 212, 255, 1) 85%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*============= Header ==================*/
+header {
+  background: var(--color-header-footer);
+}
+
+.contenedor-logo {
+  display: flex;
+  justify-content: center;
+}
+
+header .logo-pagina {
+  width: 120px;
+  transition: 1s;
+}
+
+/* Agregamos un efecto de rotacion al logo de la pagina */
+header .logo-pagina:hover {
+  transform: rotate(360deg);
+}
+
+header h3 {
+  font-family: "Tilt Warp", cursive;
+  color: #ffff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* ==================================== */
+
+.error404 {
+  margin-top: 30px;
+}
+
+.titulo-error {
+  text-align: center;
+  font-family: "Tilt Warp", cursive;
+}
+
+.contenedor-img-error {
+  display: flex;
+  justify-content: center;
+}
+.contenedor-img-error img {
+  max-width: 100%;
+  width: 500px;
+}
+
+.contenedor-boton {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.contenedor-boton a {
+  font-family: "Tilt Warp", cursive;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 1rem;
+  background: #0d6efd;
+  border-radius: 7%;
+}
+.contenedor-boton a:hover {
+  background: #0b51b9;
+}
